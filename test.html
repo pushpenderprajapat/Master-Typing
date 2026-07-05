@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Typing Test</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>⚡ Typing Test</h1>
+
+<p>Practice Speed & Accuracy</p>
+
+</header>
+
+<div class="controls">
+
+<div class="control">
+
+<label>Mode</label>
+
+<select id="modeSelect">
+
+<option value="levels">Levels</option>
+
+<option value="words">Words</option>
+
+<option value="paragraph">Paragraph</option>
+
+<option value="quotes">Quotes</option>
+
+</select>
+
+</div>
+
+<div class="control">
+
+<label>Level</label>
+
+<select id="levelSelect">
+
+<option value="1">Level 1</option>
+
+<option value="2">Level 2</option>
+
+<option value="3">Level 3</option>
+
+<option value="4">Level 4</option>
+
+<option value="5">Level 5</option>
+
+<option value="6">Level 6</option>
+
+<option value="7">Level 7</option>
+
+<option value="8">Level 8</option>
+
+<option value="9">Level 9</option>
+
+<option value="10">Level 10</option>
+
+<option value="11">Level 11</option>
+
+<option value="12">Level 12</option>
+
+<option value="13">Level 13</option>
+
+<option value="14">Level 14</option>
+
+<option value="15">Level 15</option>
+
+<option value="16">Level 16</option>
+
+<option value="17">Level 17</option>
+
+<option value="18">Level 18</option>
+
+<option value="19">Level 19</option>
+
+<option value="20">Level 20</option>
+
+<option value="21">Level 21</option>
+
+<option value="22">Level 22</option>
+
+</select>
+
+</div>
+
+<div class="control">
+
+<label>Timer</label>
+
+<select id="timeSelect">
+
+<option value="15">15 Sec</option>
+
+<option value="30">30 Sec</option>
+
+<option value="60" selected>60 Sec</option>
+
+<option value="120">120 Sec</option>
+
+<option value="300">5 Min</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="box">
+
+<h2 id="wpm">0</h2>
+
+<p>WPM</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="accuracy">100%</h2>
+
+<p>Accuracy</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="mistakes">0</h2>
+
+<p>Mistakes</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="timer">60</h2>
+
+<p>Time</p>
+
+</div>
+
+</div>
+
+<div class="typingBox">
+
+<div id="textDisplay">
+
+Loading...
+
+</div>
+
+<textarea
+
+id="typingInput"
+
+placeholder="Start typing here..."
+
+spellcheck="false">
+
+</textarea>
+
+</div>
+
+<div class="buttons">
+
+<button id="restartBtn">
+
+Restart
+
+</button>
+
+<button id="newText">
+
+New Text
+
+</button>
+
+<button onclick="history.back()">
+
+⬅ Back
+
+</button>
+
+</div>
+
+<!-- Result Popup -->
+
+<div id="resultPopup" class="popup hidden">
+
+<div class="popupCard">
+
+<h2>🎉 Test Complete</h2>
+
+<p>⚡ WPM: <span id="resultWpm">0</span></p>
+
+<p>🎯 Accuracy: <span id="resultAccuracy">100%</span></p>
+
+<p>❌ Mistakes: <span id="resultMistakes">0</span></p>
+<hr>
+
+<p>🏆 Best WPM: <span id="bestWpm">0</span></p>
+
+<p>🎯 Best Accuracy: <span id="bestAccuracy">0%</span></p>
+
+<div class="popupButtons">
+
+<button id="tryAgainBtn">Try Again</button>
+
+<button onclick="location.href='Index.html'">Home</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="data.js"></script>
+
+<script src="storage.js"></script>
+
+<script src="progress.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

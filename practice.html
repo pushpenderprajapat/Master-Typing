@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f172a">
+
+<title>Lesson Practice</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="practiceHeader">
+
+<button id="backLessonBtn">⬅ Lessons</button>
+
+<div>
+
+<h1 id="lessonTitle">📖 Lesson 1</h1>
+
+<p id="lessonName">Home Row – F & J</p>
+
+</div>
+
+</div>
+
+<div class="lessonInfo">
+
+<div class="infoCard">
+
+<h3>🎯 Goal</h3>
+
+<p id="lessonGoal">
+
+Learn F and J using the correct fingers.
+
+</p>
+
+</div>
+
+<div class="infoCard">
+
+<h3>👆 Finger Guide</h3>
+
+<p id="fingerGuide">
+
+Loading...
+
+</p>
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="box">
+
+<h2 id="timer">15:00</h2>
+
+<p>Time</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="wpm">0</h2>
+
+<p>WPM</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="accuracy">100%</h2>
+
+<p>Accuracy</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="mistakes">0</h2>
+
+<p>Mistakes</p>
+
+</div>
+
+</div>
+
+<div class="typingBox">
+
+<div id="practiceText" class="typingText">
+
+Preparing lesson...
+
+</div>
+
+<textarea
+id="typingInput"
+rows="1"
+placeholder="Start Lesson..."
+spellcheck="false"
+autocomplete="off"
+autocorrect="off"
+autocapitalize="off"
+aria-label="Typing input"></textarea>
+
+</div>
+
+<div class="buttons">
+
+<button id="restartBtn">
+
+🔄 Restart Lesson
+
+</button>
+
+<button id="exitBtn">
+
+🏠 Exit Lesson
+
+</button>
+
+</div>
+
+</div>
+
+<div id="resultModal" class="resultModal" style="display:none;">
+
+  <div class="resultCard">
+
+    <h2>🎉 Lesson Complete</h2>
+
+    <h1 id="resultStars">⭐⭐⭐</h1>
+
+    <p>⚡ WPM: <span id="resultWpm"></span></p>
+
+    <p>🎯 Accuracy: <span id="resultAccuracy"></span></p>
+
+    <p>❌ Mistakes: <span id="resultMistakes"></span></p>
+
+    <button id="nextLessonBtn">➡ Next Lesson</button>
+
+    <button id="restartLessonBtn">🔄 Restart</button>
+
+  </div>
+
+</div>
+
+<script src="lessons.js"></script>
+<script src="progress.js"></script>
+<script src="storage.js"></script>
+<script src="practice.js"></script>
+
+</body>
+</html>
